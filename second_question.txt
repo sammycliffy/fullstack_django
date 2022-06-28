@@ -1,0 +1,19 @@
+Vue.js Directives are special HTML attributes that allow us to manipulate the DOM.
+Directives are used to modify the behavior of our HTML elements which reside in the DOM. 
+In other words, we can say that directives are one of the important parts of the Vue 
+and it is used just like an HTML element’s attribute added along with any HTML elements 
+into the Vue template.
+
+example <input v-model="fullName" />
+
+ 1. v-text
+ 2. v-html
+ 3. v-show
+ 4. v-if
+ 5. v-else
+ 6. v-else-if
+ 7. v-for
+ 8. v-on
+ 9. v-bind
+ 10. v-model
+ 11. v-pre

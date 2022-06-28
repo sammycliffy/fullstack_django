@@ -1,0 +1,13 @@
+In django, Q Object can be used in database related operations. 
+Using Q objects we can make complex queries with less and simple code.
+We can use Q objects to create AND , OR conditions in our query. 
+For example, say we want all objects that have dark=True OR age>18
+
+
+class Person(models.Model):
+    name = models.CharField(max_length=255)
+    age = models.IntegerField()
+    dark = models.NullBooleanField(default=False)
+
+from django.db.models import Q
+Person.objects.filter(Q(dark=True) | Q(age__gt=18))
